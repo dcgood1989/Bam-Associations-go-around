@@ -1,12 +1,9 @@
-Upcoming Appointments for R2D2: 0
-Doctors Assigned to R2D2: 0
-Upcoming Appointments for R2D2: 1
+
+<%= "Doctors Assigned to #{@user.username}: #{@user.doctors.distinct.count}"%>
+<%= "Upcoming Appointments for #{@user.username}: #{@user.appointments.count}"%>
 Doctors Assigned to R2D2: 1
 Appointment Created with Dr. Maul
-Upcoming Appointments for R2D2: 2
 Doctors Assigned to R2D2: 2
-Upcoming Appointments for R2D2: 3
-Appointment with Dr. Maul
 
 <%= link_to "New Appointment", new_user_appointment_path(@user)%>
 <% @user.appointments.each do |appointment|%>
